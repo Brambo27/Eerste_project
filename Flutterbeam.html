@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Helloworld</title>
+    <link rel="stylesheet" href="Flutterbeam.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="homepage" data-theme="b" data-content-theme="b">
+    <div class="header" data-role="header" data-theme="b">
+        <div data-role="controlgroup" datatype="horizontal">
+            <a class="knop" href="#homepage" data-role="button" data-icon="home" data-iconpos="left">Home</a>
+            <a class="knop" href="#homepage" data-role="button">Welkom</a>
+            <a class="knop" href="#lastminutepage" data-role="button" data-icon="arrow-r" data-iconpos="right">Lastminute</a>
+        </div>
+    </div><!-- /Header -->
+    <div class="content" id="homecontent" data-role="content">
+        <img id="homeposter" class="rondehoeken" src="poster1.jpg" alt="image"/>
+        <p>Helloworld</p>
+    </div><!-- /content -->
+    <div class="footer" data-role="footer" data-theme="b">
+        <div data-role="controlgroup" datatype="horizontal">
+            <a class="knop" href="#lastminutepage" data-role="button" data-icon="grid">Agenda</a>
+            <a class="knop" href="#lastminutepage" data-role="button">Welkom</a>
+            <a class="knop" href="#lastminutepage" data-role="button" data-icon="search">Location</a>
+        </div>
+    </div><!-- /Footer -->
+</div><!-- /Homepage -->
+
+<div data-role="page" id="lastminutepage" data-content-theme="b">
+    <div class="header" data-role="header" >
+        <div data-role="controlgroup" datatype="horizontal">
+            <a class="knop" href="#homepage" data-role="button" data-icon="arrow-l" data-iconps="left">Vorige</a>
+            <a class="knop" href="#homepage" data-role="button">Home</a>
+            <a class="knop" href="#lastminutepage" data-role="button" data-icon="arrow-r" data-iconps="right">Bestel</a>
+        </div>
+        <h1>Header</h1>
+    </div><!-- /Header -->
+    <div data-role="content">
+        <p>Helloworld</p>
+        <div data-role="content">
+            <ul data-role="listview" data-split-theme="b">
+                <li id="pop" data-role="list-divider">POP</li>
+                <li id="shakira-concert">
+                    <a href="#shakira-biopage">
+                        <img class="poster" src="shakiraposter.jpg"/>
+                        <h3>Shakira</h3>
+                        <br />
+                        <p>AmsterdamArena
+                            <span id="shakira-count" class="ui-li-count"> <img src="ilike.jpg" alt="pic"/>33</span>
+                        </p>
+                        <p>Vandaag 22:00 uur </p>
+                    </a>
+                    <a href="#shakira-biopage" data-transition="slide-up"></a>
+                </li>
+                <li id="shakira-concert">
+                    <a href="#shakira-biopage">
+                        <img class="poster" src="shakiraposter.jpg"/>
+                        <h3>Shakira</h3>
+                        <br />
+                        <p>AmsterdamArena
+                            <span id="shakira-count" class="ui-li-count"> <img src="ilike.jpg" alt="pic"/>33</span>
+                        </p>
+                        <p>Vandaag 22:00 uur </p>
+                    </a>
+                    <a href="#shakira-biopage" data-transition="slide-up"></a>
+                </li>
+                <li id="jazz" data-role="list-divider">JAZZ</li>
+                <li id="shakira-concert">
+                    <a href="#shakira-biopage">
+                        <img class="poster" src="shakiraposter.jpg"/>
+                        <h3>Shakira</h3>
+                        <br />
+                        <p>AmsterdamArena
+                            <span id="shakira-count" class="ui-li-count"> <img src="ilike.jpg" alt="pic"/>33</span>
+                        </p>
+                        <p>Vandaag 22:00 uur </p>
+                    </a>
+                    <a href="#shakira-biopage" data-transition="slide-up"></a>
+                </li>
+                <li id="rock" data-role="list-divider">ROCK</li>
+                <li id="shakira-concert">
+                    <a href="#shakira-biopage">
+                        <img class="poster" src="shakiraposter.jpg"/>
+                        <h3>Shakira</h3>
+                        <br />
+                        <p>AmsterdamArena
+                            <span id="shakira-count" class="ui-li-count"> <img src="ilike.jpg" alt="pic"/>33</span>
+                        </p>
+                        <p>Vandaag 22:00 uur </p>
+                    </a>
+                    <a href="#shakira-biopage" data-transition="slide-up"></a>
+                </li>
+            </ul>
+        </div>
+    </div><!-- /content -->
+<div class="footer" data-role="footer" data-theme="b">
+    <a class="knop" href="#lastminutepage" data-role="button" data-icon="grid">Agenda</a>
+    <a class="knop" href="#lastminutepage" data-role="button">Welkom</a>
+    <a class="knop" href="#lastminutepage" data-role="button" data-icon="search">Location</a>
+</div><!-- /Footer -->
+</div><!-- /lastminutepage -->
+
+<!-- begin bestelpage -->
+<div data-role="page" id="bestelpage" data-content-theme="b" data-theme="b">
+    <div class="header" data-role="header" >
+        <div data-role="controlgroup" datatype="horizontal">
+            <a class="knop" href="#lastminutepage" data-role="button" data-icon="arrow-l" data-iconps="left">Lastminute</a>
+            <a class="knop" href="#homepage" data-role="button">Home</a>
+            <a class="knop" href="#nieuwspage" data-role="button" data-icon="arrow-r" data-iconps="right">Nieuws</a>
+        </div>
+        <h1>Header</h1>
+    </div><!-- /Header -->
+    <!--- begin content -->
+    <div data-role="content" data-theme="a">
+	<!-- begin form -->
+	<form action="form.php" method="post">
+        form action="form.php" method="post">
+        <!-- begin controlgroup -->
+        <div data-role="controlgroup">
+            <p>Kies een concert</p>
+            <input type="radio" name="concert" id="Shakira"/>
+            <label for="Shakira">Shakira</label>
+            <input type="radio" name="concert" id="Jennifer"/>
+            <label for="Jennifer">Jennifer</label>
+            <input type="radio" name="concert" id="ChickCorea"/>
+            <label for="ChickCorea">Chick Corea</label>
+            <input type="radio" name="concert" id="Nirvana"/>
+            <label for="Nirvana">Nirvana</label>
+        </div>
+        <!-- einde controlgroup -->
+        <label for="aantal">Aantal tickets</label>
+        <input type="range" name="aantal" id="aantal" min="1" max="3"/>
+        <div data-role="fieldcontain">
+            <label for="naam">Naam</label>
+            <input class="required" type="text" id="naam" name="naam"  placeholder="Type hier je naam in" />
+            <label for="adres">Adres</label>
+            <input class="required" type="text" id="adres" name="adres"  placeholder="Adres" />
+            <label for="postcode">Postcode</label>
+            <input class="required" type="text" id="postcode" name="postcode"  placeholder="Postcode" />
+            <label for="telefoon">Telefoon</label>
+            <input class="required" type="text" id="telefoon" name="telefoon"  placeholder="Mobiele telefoon" />
+            <label for="e-mail">E-mail adres</label>
+            <input class="required" type="text" id="e-mail" name="e-mail"  placeholder="E-mail adres" />
+            <label for="minderjarig">Minderjarig:</label>
+            <select name="slider" id="minderjarig" data-role="slider" data-mini="true">
+                <option value="nee">Nee</option>
+                <option value="ja">Ja</option>
+            </select>
+        </div>
+
+    </form>
+	</form>
+	<!-- /einde form -->
+</div><!-- Einde content -->
+
+    <div class="footer" data-role="footer" data-theme="b">
+        <a class="knop" href="#lastminutepage" data-role="button" data-icon="grid">Agenda</a>
+        <a class="knop" href="#lastminutepage" data-role="button">Welkom</a>
+        <a class="knop" href="#lastminutepage" data-role="button" data-icon="search">Location</a>
+    </div><!-- /Footer -->
+</div><!-- einde bestelpage-->
+
+<div data-role="page" id="shakira-biopage" data-content-theme="b">
+    <div class="header" data-role="header" >
+        <div data-role="controlgroup" datatype="horizontal">
+            <a class="knop" href="#homepage" data-role="button" data-icon="arrow-l" data-iconps="left">Vorige</a>
+            <a class="knop" href="#homepage" data-role="button">Home</a>
+            <a class="knop" href="#bestelpage" data-role="button" data-icon="arrow-r" data-iconps="right">Bestel</a>
+        </div>
+        <h1>Header</h1>
+    </div><!-- /Header -->
+
+    <!--- begin content -->
+    <div data-role="content">
+        <!-- begin video -->
+        <video controls="controls" width='500' preload="auto" id='video' poster="shakiraposter.jpg">
+            <source src="Shakira.webmhd.webm" type="video/webm">
+        	<source src="Shakira.mp4" type="video/mp4">
+        </video>
+        <!-- /einde video -->
+        <p><a class='knop' href='http://shakira-bio.tumblr.com/' data-shadow='true' data-role="button">Biography</a></p>
+    </div>
+    <!-- Einde content -->
+
+    <div class="footer" data-role="footer" data-theme="b">
+        <a class="knop" href="#lastminutepage" data-role="button" data-icon="grid">Agenda</a>
+        <a class="knop" href="#lastminutepage" data-role="button">Welkom</a>
+        <a class="knop" href="#lastminutepage" data-role="button" data-icon="search">Location</a>
+    </div><!-- /Footer -->
+</div><!– einde shkira-->
+</body>
+</html>
